@@ -1,0 +1,12 @@
+canvas {
+  width: 800px;
+  height: 800px;
+  border: 1px solid black;
+}
+
+body {
+  /* Flexbox : 1차원 레이아웃  */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
