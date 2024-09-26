@@ -8,6 +8,21 @@
   </head>
   <body>
     <canvas></canvas>
+    <input id="lineWidth" type="range" min="1" max="10" value="5" step="0.5" />
+    <!-- input step속성 범위의 변경크기 : 정수 또는 any(모든값허용) -->
+    <div>
+      <input type="color" id="color" />
+      <div class="color-option" style="background-color: #f7a3a7" data-color="#F7A3A7"></div>
+      <div class="color-option" style="background-color: #f7ad97" data-color="#F7AD97"></div>
+      <div class="color-option" style="background-color: #fad89e" data-color="#FAD89E"></div>
+      <div class="color-option" style="background-color: #c8d7c4" data-color="#C8D7C4"></div>
+      <div class="color-option" style="background-color: #bbcbd2" data-color="#BBCBD2"></div>
+      <div class="color-option" style="background-color: #b7b6d6" data-color="#B7B6D6"></div>
+      <div class="color-option" style="background-color: #e2bbd8" data-color="#E2BBD8"></div>
+    </div>
+    <button id="mode-button">Fill</button>
+    <button id="removeAll-button">Remove All</button>
+    <button id="erase-button">Erase</button>
     <script src="app.js"></script>
     <!-- <script src="practice.js"></script> -->
   </body>
