@@ -1,17 +1,87 @@
-canvas {
-  width: 800px;
-  height: 800px;
-  border: 1px solid black;
-}
+@import 'reset.css';
 
 body {
-  /* Flexbox : 1차원 레이아웃  */
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: gainsboro;
+  padding: 20px;
+}
+body {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
+canvas {
+  width: 800px;
+  height: 800px;
+  border-radius: 10px;
+  background-color: white;
+}
+.color-options {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 .color-option {
   width: 50px;
   height: 50px;
+  border: 5px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform ease-in-out 0.1s;
+}
+.color-option:hover {
+  transform: scale(1.2);
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+button {
+  all: unset; /* 모든 css속성 해제한다는 의미 */
+  background-color: rgb(65, 125, 237);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 900;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: opacity linear 0.1s;
+}
+button:hover {
+  opacity: 0.9;
+}
+input#file {
+  display: none;
+}
+label {
+  background-color: rgb(65, 125, 237);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 900;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: opacity linear 0.1s;
+}
+label:hover {
+  opacity: 0.9;
+}
+input#text {
+  all: unset;
+  padding: 10px;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 900;
+  border-radius: 10px;
+  background-color: white;
+}
+input#text:focus::placeholder {
+  color: transparent;
 }
